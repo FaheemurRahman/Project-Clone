@@ -1277,17 +1277,15 @@ a {
   display: none;
 }
 
-  @media only screen   and (max-width:360px) 
+  /* @media only screen   and (max-width:360px) 
   {
-    
     .headerleft{
     display: none;                /* Hide nav links */
-    flex-direction: column;
+    /* flex-direction: column;
     background-color: #0176d3;
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     border-radius: 0 0 10px 10px;
@@ -1295,9 +1293,9 @@ a {
 
     #menu-toggle:checked + .menu-icon + .headerleft {
       display: flex;
-    }
+    } */
   
-    /* Show the hamburger icon */
+    /* Show the hamburger icon 
     .menu-icon {
       display: block;
     }
@@ -1306,4 +1304,54 @@ a {
       display: none;
     }
 
+    button, .try, .but{
+      display: none;
+    }
+  } */
+
+
+  @media only screen and (max-width: 360px) {
+    body, html {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      overflow-x: hidden !important;  /* Prevent horizontal scroll */
+    }
+  
+    .containers, .container, .container2 {
+      width: 100% !important;        /* Force full width */
+      display: flex !important;
+      justify-content: space-between !important;
+      padding: 5px !important;
+      box-sizing: border-box !important;
+    }
+  
+    .headerleft, .headeright1 {
+      display: none !important;      /* Hide unnecessary items */
+    }
+  
+    .menu-icon {
+      display: block !important;     /* Ensure the hamburger menu shows */
+      cursor: pointer;
+      font-size: 24px;
+      padding: 10px;
+    }
+  
+    .headerleft {
+      display: none !important;
+      flex-direction: column !important;
+      background-color: #0176d3 !important;
+      position: absolute !important;
+      top: 60px !important;
+      right: 0 !important;
+      width: 100% !important;         /* Full-width nav */
+      padding: 15px !important;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+      border-radius: 0 0 10px 10px !important;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .headerleft {
+      display: flex !important;      /* Show menu when checkbox is checked */
+    }
   }
+  
