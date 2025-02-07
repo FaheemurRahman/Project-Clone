@@ -5,87 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Reset */
+        /* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Main Content */
-.content {
-    min-height: 1500px; /* Simulate long page */
-    padding: 20px;
-    background: #f9f9f9;
-}
-
-/* Footer */
-.footer {
-    background-color: #f1f1f1;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-/* Contact Button Container */
-.icontact {
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    z-index: 1000;
+  }
+  
+  /* Navbar Style */
+  .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-/* Button Styling */
-#lastbut {
-    border-radius: 25px;
-    height: 48px;
-    min-width: 146px;
-    border: none;
     background-color: #0176d3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 18px 0px;
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-
-    /* New Addition */
-    transition: bottom 0.3s ease-in-out;
-}
-
-/* Button Text */
-#nomorebut {
-    font-size: 14px;
+    padding: 10px 20px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    font-weight: 700;
-}
-
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffdd57;
+  }
+  
+  /* Hamburger Icon (Hidden by Default) */
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Hide Checkbox */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /*  Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;                /* Hide nav links */
+      flex-direction: column;
+      background-color: #0176d3;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-radius: 0 0 10px 10px;
+    }
+  
+    /* Show links when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  
+    /* Show the hamburger icon */
+    .menu-icon {
+      display: block;
+    }
+  }
+  
     </style>
 </head>
-
 <body>
-    <div class="content">
-        <p> Scroll down to see the button behavior. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis asperiores nesciunt, excepturi aspernatur, esse quos, ullam deleniti non quasi magni libero et ad dolorum placeat vero porro perspiciatis! Sit unde voluptas obcaecati laboriosam id cupiditate excepturi repellat eaque, quisquam quas libero numquam? Architecto labore, nobis odio temporibus nisi explicabo deleniti nemo iste enim iusto omnis laboriosam neque. Non natus deserunt ipsam esse dignissimos a rerum cumque, maiores optio magnam voluptate molestiae vel in quaerat neque fugit? Expedita consequatur ducimus voluptatem, rerum veniam porro maxime itaque dolorum pariatur enim quam eius temporibus ipsum esse, delectus laudantium laborum hic! Repellendus consectetur doloribus cum laudantium temporibus perspiciatis eius. Repellendus obcaecati iusto minima repellat expedita soluta animi voluptatum debitis similique, nemo tenetur voluptas, placeat unde numquam ab qui magni non dolorem, deserunt quis voluptate laudantium delectus aut doloremque. Magnam saepe velit ipsam inventore consequuntur aperiam blanditiis perferendis excepturi autem assumenda non possimus nemo, modi placeat. Rerum consequuntur facilis laborum possimus quaerat minima in facere odit recusandae, dicta nobis labore unde nostrum, esse sunt accusantium, quod minus! Vitae, omnis! Unde, sed iure. Deserunt vitae eius earum blanditiis, sunt doloremque vel alias inventore nemo repellat non! Libero nulla dolorum harum iste similique recusandae commodi reprehenderit dicta? Veritatis voluptate rerum temporibus numquam, facere eius nobis quia ducimus nostrum ut laborum voluptatem labore similique magnam. Corporis commodi dolore quisquam molestiae. Voluptatibus aliquid, nisi ab sapiente alias vel harum. Et enim qui, eos ut totam dolores, nostrum dolore unde eligendi dicta perferendis. Voluptate dignissimos sit corrupti eveniet necessitatibus dolores dolorum excepturi, in ab maxime voluptatem laudantium, ipsa esse nobis asperiores possimus porro blanditiis. Asperiores necessitatibus optio esse ipsa? Possimus, laudantium iusto. Incidunt animi debitis dolor adipisci commodi illum dolore sint, repudiandae nisi facilis nobis delectus autem est sed accusamus maxime cupiditate, aspernatur cum eum officia inventore deserunt. Corporis natus deleniti illo assumenda est dolorem a. Nesciunt, vel eius, quibusdam ipsum blanditiis aliquam dolore, cupiditate assumenda a minima dolor! Fuga non repellendus exercitationem omnis reiciendis, harum aut commodi iste dolorem quos quod aspernatur veniam ex obcaecati doloribus doloremque deserunt sit pariatur molestiae mollitia illum ipsa quas repellat? Soluta fuga exercitationem dolor corporis fugit? Iusto, at totam! Rerum nemo perferendis accusamus molestiae dolorem, inventore ea earum impedit fugit veritatis dignissimos ducimus harum, assumenda, a eligendi natus neque soluta in voluptatem quod voluptas blanditiis! Culpa, eius at reprehenderit consectetur temporibus deleniti quam totam eligendi sed perferendis corporis. Blanditiis, minus sunt consequuntur dicta vitae praesentium natus corrupti non consectetur ratione officia nemo atque voluptate. Optio veritatis at quasi tempore doloribus. At eaque praesentium dolores, a tempore enim impedit in totam? Excepturi fugit inventore laborum provident sequi asperiores accusamus, voluptates soluta rem voluptatum aspernatur mollitia suscipit a ducimus aperiam facere. Delectus laborum est asperiores tempore ut libero minima quae consequatur neque quidem alias enim sapiente molestias veritatis culpa, inventore vel iste, perspiciatis aut ipsam? Dolores dicta et officiis voluptas numquam ea sequi culpa suscipit, officia quasi praesentium aliquam consequuntur, veritatis non reiciendis eaque eveniet animi. Quod aliquid error tempore quibusdam eius veniam labore dolore.</p>
-        <div style="height: 1500px;"></div> <!-- Simulated long content -->
-    </div>
-    
-    <!-- Contact Button -->
-    <div class="icontact">
-        <button id="lastbut">
-            <a id="nomorebut" href="https://www.salesforce.com/in/company/contact-us/?d=70130000000EeYa">Contact Us</a>
-        </button>
-    </div>
-    
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>This is the footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta ut magnam aut soluta, necessitatibus ducimus voluptates accusantium ex voluptatibus blanditiis rerum, doloribus mollitia error veniam est libero! Asperiores, nulla reprehenderit quos expedita animi corrupti repudiandae obcaecati dolore error libero dignissimos aspernatur nisi. At et ab officiis mollitia. Saepe, aut perspiciatis, dolor dignissimos obcaecati vitae incidunt provident nulla reprehenderit reiciendis eos tenetur sed ab iusto velit! Vero debitis sunt reprehenderit asperiores. Quibusdam cum a maxime id? Expedita magni quisquam a ipsum neque quia dolore tenetur? Quidem fuga, voluptatem neque nemo possimus illum ipsa vitae? Quaerat iste blanditiis iusto obcaecati debitis similique maxime laboriosam sunt perferendis necessitatibus, vero, iure deserunt facere vitae dignissimos repellat ad corporis? Architecto fuga eius quo accusantium repellendus quam assumenda. Vitae exercitationem officiis commodi corporis temporibus ratione, aliquid labore voluptatum quo. Distinctio blanditiis magnam exercitationem quasi commodi nulla laboriosam deserunt quibusdam dolores, consequuntur id? Incidunt officia voluptate nobis? Fuga, saepe exercitationem harum corporis corrupti, eveniet hic autem voluptates earum fugiat sequi repellendus rerum debitis nihil ipsum nam maiores ea architecto officiis commodi dolore. Necessitatibus, optio! Ratione magnam aliquid, totam soluta recusandae quod eum doloribus? Enim provident dignissimos, vel maiores quos suscipit? Pariatur optio aliquid facilis voluptatum praesentium maxime facere laudantium aperiam. Totam inventore numquam, est exercitationem ab magnam tenetur eum, cumque excepturi nesciunt vitae praesentium rerum laboriosam voluptas dolores adipisci ullam perferendis dolor aliquid atque ducimus aperiam expedita ipsa pariatur? Atque ullam optio deleniti minus necessitatibus exercitationem molestiae aliquid ut. Nostrum nam perspiciatis aliquid quaerat eligendi dignissimos quo? Laudantium voluptatibus eligendi deleniti molestias quia aut dolores accusamus animi, recusandae nesciunt cum ullam error? Laboriosam omnis labore ullam eius eveniet repellendus cum rem, alias nesciunt deserunt fugit, ipsa quis delectus commodi magni excepturi unde tenetur dolorum nam distinctio. Facilis magni, nihil error dolorem, dolore doloremque perspiciatis tenetur quibusdam vero quae quia explicabo. Possimus neque impedit eveniet ad unde sit iste aut natus, facilis similique at sequi dolorem magnam. Optio, commodi. Temporibus repellendus architecto, maiores non consequuntur inventore nam blanditiis iste enim in aliquid. Dolor, debitis sapiente maxime harum asperiores dolorum eligendi, perspiciatis repellendus pariatur officia delectus? Excepturi corporis vero repellendus eligendi quasi a aperiam rem laboriosam optio? Aperiam officiis voluptas modi ex a molestiae accusamus non ipsam alias distinctio adipisci provident minima quam fugiat, quaerat fugit dolorem asperiores quod totam dolorum cupiditate. Nobis illo minus harum corrupti! Quo expedita facilis ab quaerat laudantium nisi similique quasi id quidem aliquid sint, maxime fugit iure adipisci atque molestias distinctio quia dignissimos cum nam ducimus laboriosam. Officia inventore blanditiis est, delectus molestias placeat nihil aliquid debitis, natus minus a facere saepe optio reiciendis consequatur doloremque temporibus accusantium recusandae et quidem repudiandae voluptates eos itaque neque! Qui, quisquam veniam totam unde corrupti molestias? Perferendis, culpa omnis ea dolorem ad atque harum deleniti praesentium obcaecati, blanditiis repellat voluptatem illo sit eum officiis aut doloribus distinctio delectus beatae, aperiam perspiciatis labore animi fugit? Id aperiam, laboriosam praesentium deleniti vero necessitatibus a ducimus non perferendis obcaecati. Harum eos iusto quibusdam dignissimos non! Nostrum illum, at iste dolores error eius pariatur excepturi, ducimus repellat cumque quaerat optio nihil cupiditate consequuntur accusantium magni tempore culpa. Ipsa quaerat officia mollitia provident vero, consectetur est quia facere quos dolorum saepe quisquam culpa eius error. Vitae, eius libero dolores voluptatibus perferendis possimus porro veritatis numquam tempore tempora blanditiis quae doloremque?</p>
-    </footer>
-    
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        
+        <!-- Hamburger Icon -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 </body>
 </html>
