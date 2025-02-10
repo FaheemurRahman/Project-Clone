@@ -489,11 +489,12 @@
 }
 
 #boxmore {
-  width: 226px;
+  width: 85px;
   height: 27.2px;
   margin: 0px 32px 40px;
   font-weight: 700;
   cursor: pointer;
+  padding: 0px;
   font-size: 16px;
   text-decoration: underline;
 }
@@ -502,6 +503,17 @@
   color: #0176d3;
   text-decoration: none;
 }
+
+#boxmore:focus,
+#boxmore:focus-visible {  
+  outline: none; 
+  color: #0176d3; 
+  border-radius: 4px;                
+  text-decoration: underline;   
+  background-color: #dff0ff;    
+  box-shadow: 0 0 0 4px #0176d3;     /* Outer border */
+}
+
 
 #boxheading {
   width: 226px;
@@ -1017,7 +1029,6 @@
 
 /* Padding Layer */
 .background__padding--partial-overlap {
-  padding: 50px 0;  /* Creates spacing after the background */
   background-color: white;
   position: relative;
   z-index: 0;
@@ -1025,6 +1036,215 @@
 
 
 /*#endregion*/
+
+/*#region*/ /*Seventh_Container*/
+
+.container7{
+  display: grid;
+  border-radius: 25px;
+  margin: 64px 90px;
+  height: 475px;
+  background-color: #ffffff;
+  grid-template-columns: 3fr 3fr;
+  box-shadow: -2px 0 2px 0 rgba(128, 128, 128, 0.2),
+  2px 0 2px 0 rgba(128, 128, 128, 0.2), 0 2px 2px 0 rgba(128, 128, 128, 0.2);
+}
+
+#left7{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#text7{
+  width: 429px;
+  height: 120px;
+  margin-bottom: 24px;
+ color: #032d60;
+  font-size: 32px;
+  margin: 0px;
+  margin-left: 95px;
+  margin-top: 120px;
+  font-weight: 700;
+}
+
+#links7{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  margin-left: 95px;
+  
+}
+
+#stf7{
+ width: 173px;
+ height: 51.2px;
+ border-radius: 5px;
+ background-color: #0176d3;
+ color: #ffffff;
+ padding: 16px 36px;
+ font-size: 16px;
+ font-weight: 600;
+ margin-left: 10px;
+}
+#sp7{
+  width: 176px;
+  height: 51.2px;
+  border-radius: 5px;
+  border: 2px solid rgb(1, 118, 211);
+  color: #0176d3;
+  background-color: #ffffff;
+  padding: 14px 36px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#sp7:hover {
+  border: 2px solid #140075;
+  background-color: #e1f0fc;
+}
+
+
+#sp7:focus,
+#sp7:focus-visible {
+  border: 2px solid #140075;         /* Inner border */
+  outline: none; 
+  color: #140075;                    
+  background-color: #dff0ff;    
+  box-shadow: 0 0 0 4px #0176d3;     /* Outer border */
+}
+
+#stf7:hover {
+  background-color: #140075;
+}
+
+
+#stf7:focus,
+#stf7:focus-visible {  
+  border: 2px solid #140075;         /* Inner border */
+  outline: none; 
+  color: #ffffff;                    
+  background-color:#140075;    
+  box-shadow: 0 0 0 4px #0176d3;   /* Outer border */
+  padding: 16px 31px;
+}
+
+#inr2007{
+  width: 521.2px;
+  height: 443.8px;
+  width: 521.2px;
+  height: 443.8px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+/*#endregion*/ /*Seventh_Container*/
+
+/*#region*/ /*Ninth_Container*/
+
+.container8{
+  padding: 64px 0px;
+}
+
+#busi8{
+  font-size: 32px;
+  color: #032d60;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#businesscards8{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr; 
+  margin-top: 32px;
+  margin-left: 90px;
+  margin-right:45px;
+}
+
+
+.imgcard8{
+  width: 235.6px;
+  height: 235.6px;
+}
+
+#imglink8{
+  font-size: 16px;
+  color:#032d60;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 4px;
+}
+
+#imglink8:hover {
+  color: #0176d3;
+  text-decoration: none;
+}
+
+#imglink8:focus,
+#imglink8:focus-visible {  
+  outline: none; 
+  color: #0176d3; 
+  border-radius: 4px;                
+  text-decoration: underline;   
+  background-color: #dff0ff;    
+  box-shadow: 0 0 0 4px #0176d3;     /* Outer border */
+}
+
+/*#endregion*/
+
+/*#region*/ /*Tenth_Container*/
+
+.continent9{
+  display: grid;
+  justify-content: center;
+  align-items:center;
+  padding-top: 64px;
+}
+
+#text9{
+  font-size: 32px;
+  width: 801px;
+  height: 80px;
+  color: #032d60;
+  text-align: center;
+}
+
+
+.container9{
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 64px;
+  margin-left: 64px;
+}
+
+#Winterimg{
+  width: 379.2px;
+  height: 253px;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast; 
+  display: block;
+  max-width: 100%;
+  height: auto; 
+}
+
+#adv8{
+  align-items: center;
+  width: 379px;
+  height: 24px;
+  margin: 30px 0px;
+}
+
+
+
+
+
+
+
+/*#endregion*/
+
 
 /*#region*/ /*Sixth_Container*/
 
@@ -1166,6 +1386,8 @@
 
 /*#endregion*/
 
+
+
 /*#region*/ /*Seventh_Container*/
 .newgrid {
   display: grid;
@@ -1221,7 +1443,8 @@ a {
 /*#endregion*/
 
 
-/* #region /*Eight & Last_Container*/
+/* #region /*Eight_Container*/
+
 .lastbutnottheleast {
   background-color: #032e61;
   padding-bottom: 20px;
@@ -1343,6 +1566,14 @@ a {
   display: none;
 }
 
+#nowmorebut{
+  display: none;
+}
+
+#lastmorebut{
+  display: none;
+}
+
   /* @media only screen   and (max-width:360px) 
   {
     .headerleft{
@@ -1375,9 +1606,69 @@ a {
     }
   } */
 
+  /* login design Extra one  */
+  /* Container to hold the login button and dropdown */
+.login-container {
+  position: relative; /* Needed for absolute positioning */
+  display: inline-block;
+}
+
+/* Login Button */
+#login {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display: none;               /* Hide initially */
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Show dropdown when hovering over the login container */
+.login-container:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for Links */
+.dropdown-content a {
+  color: #0176d3;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraph styling */
+.dropdown-content p {
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: left;
+  color: #333;
+  font-weight: 500;
+ 
+}
+
+
   
 
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 360px) {
     /* Navbar-Media */
     
     body, html {
@@ -1676,15 +1967,102 @@ a {
 
     .background__contour {
       position: relative;
-      top: -24px;  /* Adjust for better overlap */
+      top: -22px;  /* Adjust for better overlap */
       width: 100%;
       height: auto;
       z-index: 1;
     }
-    #lastimg{
-      width: 312px;
-      height: 716px;
+    #lasttext{
+        position: relative;
+        /* overflow: hidden; */
+
     }
+
+    
+      .container6 {
+        padding: 32px 10px;
+        margin: 0 16px;
+      }
+    
+      #lightbackimg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  /* Align content to the left */
+      }
+    
+      #lastimg {
+        width: 100%;
+        height: auto;
+        border-width: 5px;
+        top: 0;
+      }
+    
+      
+    
+     
+    
+      #lasttext {
+        position: static;
+        text-align: left;       /* Align text to the left */
+        margin: 16px 0;
+      }
+    
+      #cont6head {
+        width: 100%;
+        font-size: 32px;
+        margin: 10px 0;
+        text-align: center;       /* Align heading left */
+        position: relative;
+        top: -243px;
+        
+      }
+    
+      #cont6text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0 10px;
+        text-align: center;
+        position: relative;
+        top: -186px;
+
+      }
+    
+      #subcont6 {
+        display: flex;
+        flex-direction: row;    /* Place buttons side by side */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        
+      }
+    
+      #extraspacing {
+        position: static;
+        display: flex;
+        flex-direction: row;    /* Buttons side-by-side */
+        gap: 13px;
+        width: 100%;
+        justify-content: space-around;  /* Even spacing */
+      }
+    
+      #subcont6left,
+      #subcont6right {
+        width: auto;
+        padding: 12px 16px;     /* Adjust padding */
+        margin: 0;
+        text-align: center;
+      }
+      .container6 img {
+        width: 100%;
+        border-radius: 15px;
+        position: relative;
+        top: 176px;
+      }
+      .lastimage5 {
+        width: 100%;
+        padding: 0 10px;
+      }
 
     .newgrid{
       display: none;
@@ -1692,10 +2070,85 @@ a {
 
     .lastbutnottheleast{
       width: 360px;
-      height: 239px;
+      height: 235px;
+      padding: 0px 32px;
     }
 
-  }
+    #worldgrid{
+      width: 296px;
+      height: 52px;
+      margin-left: 90px;
+    }
+
+    #footerlinks{
+      width: 296px;
+      height: 79px;
+    }
+
+    #Sf_finished{
+      width: 296px;
+      height: 36px;
+      margin: 15px 0px;
+      line-height: 21px;
+    }
+
+    #nomorebut{
+      display: none;
+    }
+
+  #lastbut{
+      display: none;
+    }
+   
+    #nowmorebut {
+      border-radius: 50%;              /* Makes it a perfect circle */
+      width: 50px;                     /* Equal width and height for a circle */
+      height: 50px;                    
+      background-color: #0176d3;       /* Blue background */
+      position: fixed;                 
+      right: 20px;                     /* Adjusted for better mobile placement */
+      bottom: 20px;                    
+      z-index: 1000;
+      display: flex;                   /* Center the phone icon */
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+      cursor: pointer;
+    }
+  
+    .fa-phone {
+      color: white;
+      font-size: 24px;
+      position: relative;
+      top: 8px;
+    } 
+
+    #lastmorebut{
+      border-radius: 50%;              /* Makes it a perfect circle */
+      width: 50px;                     /* Equal width and height for a circle */
+      height: 50px;                    
+      background-color: #0176d3;       /* Blue background */
+      position: fixed;                 
+      right: 20px;                     /* Adjusted for better mobile placement */
+      bottom: 80px;                    
+      z-index: 1000;
+      display: flex;                   /* Center the phone icon */
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+      cursor: pointer;
+    }
+
+    .fa-message {
+      color: white;
+      font-size: 24px;
+      position: relative;
+      top: 8px;
+    } 
+
+    }
+
+  
   
   @media (max-width: 360px) {
     .background__gradient {
