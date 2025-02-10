@@ -280,6 +280,7 @@
 #agentlink:focus-visible {  
   border: 2px solid #140075;         /* Inner border */
   outline: none; 
+  border-radius: 5px;
   color: #ffffff;                    
   background-color:#140075;    
   box-shadow: 0 0 0 4px #0176d3;     /* Outer border */
