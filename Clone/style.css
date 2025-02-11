@@ -985,15 +985,15 @@
 
 
 /* Gradient Background */
-.background__gradient {
-  background-image: linear-gradient(180deg, #0099ff 0%, #FFFFFF 100%); /* Light dark to white */
+/* .background__image {
+  background-image: linear-gradient(180deg, #000000 40%, #ff0000 60%);  Light dark to white 
   position: absolute;
-  top: -580px;       /* Slightly higher for better effect */
+  top: -580px;       Slightly higher for better effect
   left: 0;
   width: 100%;
-  height: 600px;   /* Increased height for a longer gradient */
+  height: 600px;  Increased height for a longer gradient
   z-index: -3;
-}
+} */
 
 
 /* Blade Background Container */
@@ -1525,6 +1525,7 @@ a {
 /*#endregion*/
 
   #lastbut {
+    cursor: pointer;
     border-radius: 25px;
     height: 48px;
     min-width: 146px;
@@ -1618,11 +1619,39 @@ a {
 #login {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 12px 20px;
+  padding: 12px 15px;
   font-size: 16px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.region-container{
+  position: relative;
+  display: inline-block;
+}
+
+#region{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.dropdown-content5{
+  display: none;               /* Hide initially */
+  position: absolute;
+  width: 600px;
+  right: -210px;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 1000;
 }
 
 /* Dropdown Content (hidden by default) */
@@ -1637,9 +1666,20 @@ a {
   z-index: 1000;
 }
 
+.region-container:hover .dropdown-content5{
+  display: block;
+}
+
 /* Show dropdown when hovering over the login container */
 .login-container:hover .dropdown-content {
   display: block;
+}
+
+.dropdown-content5 a{
+  color: #0176d3;
+  text-decoration: none;
+  display: block;
+  
 }
 
 /* Styling for Links */
@@ -1647,13 +1687,25 @@ a {
   color: #0176d3;
   text-decoration: none;
   display: block;
-  padding: 8px 0;
+  padding: 8px 0px;
   font-weight: 600;
+}
+
+.dropdown-content5 a:hover {
+  text-decoration: underline;
 }
 
 /* Hover effect for links */
 .dropdown-content a:hover {
   text-decoration: underline;
+}
+
+.dropdown-content5 p{
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: left;
+  color: #333;
+  font-weight: 500; 
 }
 
 /* Paragraph styling */
@@ -1663,11 +1715,64 @@ a {
   text-align: left;
   color: #333;
   font-weight: 500;
- 
+}
+
+#logs{
+  display: block;
+  font-size: 16px;
+  color: #032d60;
+}
+  
+
+#gridregion{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#gridregion a {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #032e61;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 
-  
+#gridregion a:hover{
+  color: #0176d3;  
+}
+
+#abc a:hover{
+  color: #0176d3;
+}
+
+#india25{
+  color: #0176d3;
+}
+
+.sidecols{
+  margin-left: 20px; 
+  margin-right: 15px;
+  border-right: 1px solid black;
+}
+
+.reg{
+  margin-left: 20px;
+  padding-bottom: 25px;
+}
+
+#World{
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+ #kingkingking{
+  color: #ff0000;
+  font-size: 12px;
+}
+
 
   @media (max-width: 370px) {
     /* Navbar-Media */
@@ -1687,7 +1792,7 @@ a {
       box-sizing: border-box !important;
     }
   
-    .headerleft, .headeright1 {
+    .headerleft, .headeright1 { 
       display: none !important;      /* Hide unnecessary items */
     }
   
