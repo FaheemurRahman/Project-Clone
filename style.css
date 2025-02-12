@@ -1452,7 +1452,7 @@ a {
   padding-left: 140px;
   padding-right: 160px;
   text-decoration: none;
-  width: 1380px;
+  width: 1480px;
   height: 94px;
   
 }
@@ -1828,10 +1828,11 @@ a {
         width: 101px;
         height: 27px;
         position: absolute;
-        top: 28px;
+        top: 25px;
+        right: 2px;
         padding: 5px;
-   
       }
+      
       .media360login{
         display: inline;
         position: relative;
